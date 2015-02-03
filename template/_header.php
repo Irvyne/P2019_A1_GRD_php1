@@ -1,0 +1,10 @@
+<header>
+    <nav>
+        <ul>
+            <li>Homepage</li>
+            <li>Categories</li>
+            <li>regerg</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</header>
