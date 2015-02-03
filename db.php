@@ -25,4 +25,13 @@ $link = mysqli_connect(
 $sql   = 'SELECT * FROM pokemon';
 $query = mysqli_query($link, $sql);
 
-var_dump(mysqli_fetch_array($query));
+if (false !== $query) {
+    $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
+} else {
+    //var_dump(mysqli_error($link));
+}
+
+foreach ($result as $pokemon) {
+    echo '<h1>'.$pokemon['name'].'</h1>';
+    echo '<small>'.$pokemon['hp'].'HP</small>';
+}
